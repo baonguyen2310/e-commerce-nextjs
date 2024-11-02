@@ -4,6 +4,11 @@ import { useState, useEffect } from 'react'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ProductItem from './ProductItem'
+
+import styles from './products.module.css'
+
+import './style.css'
 
 const Products = () => {
     const [page, setPage] = useState(1)
@@ -34,22 +39,21 @@ const Products = () => {
     return (
         <div>
             <Header />
-            <h1 className='bg-midnight'>Products</h1>
+            <h1 className='bg-primary text-primary-foreground'>Products</h1>
+            <h1 className='bg-orange-500 text-white text-center'>Hello</h1>
             <ul>
                 {
                     products.map((product) => {
                         return (
-                            <li key={product.id}>
-                                <p>Name: {product.name}</p>
-                                <img src={product.imgurl} width={100} height={100} />
-                            </li>
+                            <ProductItem key={product.id} product={product} />
                         )
                     })
                 }
             </ul>
             <p>Page: {page} / { totalPages } </p>
-            <button onClick={handlePreviousBtn}>Previous</button>
-            <button onClick={handleNextBtn}>Next</button>
+            <button onClick={handlePreviousBtn} className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'>Previous</button>
+            <button className='next-btn' onClick={handleNextBtn}>Next</button>
+            <button className={styles['btn-primary']} onClick={handleNextBtn}>Next</button>
 
             <Footer />
         </div>

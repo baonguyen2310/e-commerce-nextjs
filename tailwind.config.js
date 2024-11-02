@@ -8,9 +8,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        border: "var(--border)",
+        ring: "var(--ring)",
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'midnight': '#121063',
+        primary: {
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
+        },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
       },
     },
   },
