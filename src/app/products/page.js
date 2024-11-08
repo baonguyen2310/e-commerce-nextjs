@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react'
 
 import Header from '@/components/Header'
+
+import { SearchBar } from '@/components/Header'
+
 import Footer from '@/components/Footer'
 import ProductItem from './ProductItem'
 
@@ -45,7 +48,7 @@ const Products = () => {
                 {
                     products.map((product) => {
                         return (
-                            <ProductItem key={product.id} product={product} />
+                            <ProductItem key={product.id} product={product} message={'hello'} />
                         )
                     })
                 }

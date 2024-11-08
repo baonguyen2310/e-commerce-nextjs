@@ -1,7 +1,12 @@
 import { useRouter } from 'next/navigation'
 
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, message }) => {
+    // const product = props.product
+    // const message = props.message
+
+    // const { product, message } = props
+
     const router = useRouter()
 
     return (
