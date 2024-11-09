@@ -3,7 +3,7 @@
 import { useContext } from 'react'
 import UserContext from '@/context/UserContext'
 
-export default Header = () => {
+const Header = () => {
     const { user, setUser } = useContext(UserContext)
 
     return (
@@ -25,5 +25,7 @@ const SearchBar = () => {
         <h1>Search bar</h1>
     )
 }
+
+export default Header
 
 export { SearchBar }
