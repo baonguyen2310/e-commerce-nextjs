@@ -1,0 +1,5 @@
+.btn-decrease, .btn-increase {
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+}
