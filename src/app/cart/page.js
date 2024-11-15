@@ -66,7 +66,7 @@ const Cart = () => {
                                 <p>Product ID: {product.productId}</p>
                                 <button onClick={() => handleDecreaseBtn(product)}>-</button>
                                 <input onChange={(e) => handleQuantityInputChange(product.productId, Number(e.target.value))} value={product.quantity} />
-                                <button onClick={handleIncreaseBtn()}>+</button>
+                                <button onClick={handleIncreaseBtn}>+</button>
                                 <button onClick={() => handleDeleteBtn(product)}>Xoá</button>
                                 {/*
                                     onClick = 1 hàm nhận vào 0 tham số hoặc 1 tham số event
