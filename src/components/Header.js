@@ -6,6 +6,8 @@ import UserContext from '@/context/UserContext'
 const Header = () => {
     const { user, setUser } = useContext(UserContext)
 
+
+    // ? : là toán tử 3 ngôi (condition ? true : false)
     return (
         <h1>
             {user ? (

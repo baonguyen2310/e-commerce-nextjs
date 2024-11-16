@@ -26,7 +26,10 @@ const Product = () => {
     }
 
     function handleDecreaseBtn() {
-        setQuantity(quantity - 1)
+        // setQuantity(quantity - 1)
+        // setQuantity(quantity - 1)
+        setQuantity(prev => prev - 1)
+        // setQuantity(prev => prev - 1)
     }
 
     function handleIncreaseBtn() {

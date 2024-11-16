@@ -10,9 +10,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <UserProvider>
-          {children}
-        </UserProvider>
+        <div className='root-layout'>
+          <UserProvider>
+            {children}
+          </UserProvider>
+        </div>
       </body>
     </html>
   )
