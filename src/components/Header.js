@@ -2,6 +2,7 @@
 
 import { useContext } from 'react'
 import UserContext from '@/context/UserContext'
+import Weather from './Weather'
 
 const Header = () => {
     const { user, setUser } = useContext(UserContext)
@@ -9,7 +10,8 @@ const Header = () => {
 
     // ? : là toán tử 3 ngôi (condition ? true : false)
     return (
-        <h1>
+        <div className='header'>
+            <h1 className='welcome'>
             {user ? (
                 <>
                     <p>Welcome, {user.name}</p>
@@ -18,7 +20,10 @@ const Header = () => {
             ) : (
                 <button onClick={() => setUser({ id: 1, name: 'John' })}>Login</button>
             )}
-        </h1>
+            </h1>
+            <Weather />
+        </div>
+        
     )
 }
 
