@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata = {
   title: 'E-commerce NextJs',
   description: 'E-commerce NextJs',
-  openGraph: {
+  openGraph: { // og metadata
     title: 'E-commerce NextJs',
     description: 'E-commerce NextJs',
     url: 'http://localhost:3000',
